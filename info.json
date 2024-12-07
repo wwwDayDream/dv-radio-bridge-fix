@@ -2,7 +2,7 @@
   "Id": "RadioBridge",
   "DisplayName": "Modified - Radio Bridge",
   "Author": "Zeibach; PatchedBy:wwwDayDream",
-  "Version": "1.0.1m",
+  "Version": "1.0.1x",
   "LoadAfter": [],
   "AssemblyName": "RadioBridge.dll",
   "EntryMethod": "DvMod.RadioBridge.Main.Load",
