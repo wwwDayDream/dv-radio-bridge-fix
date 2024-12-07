@@ -5,3 +5,4 @@ obj/
 Directory.Build.props
 .vscode/
 *.sln
+.idea/
