@@ -7,5 +7,5 @@
   "AssemblyName": "RadioBridge.dll",
   "EntryMethod": "DvMod.RadioBridge.Main.Load",
   "HomePage": "",
-  "Repository": "https://raw.githubusercontent.com/wwwDayDream/dv-radio-bridge/main/resources/repository.json"
+  "Repository": "https://raw.githubusercontent.com/wwwDayDream/dv-radio-bridge-fix/main/resources/repository.json"
 }
