@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer" Version="2.2.1" />
+    <PackageReference Include="NAudio.Lame" Version="2.1.0"/>
     <Publicize Include="Assembly-CSharp" IncludeCompilerGeneratedMembers="false" />
     <Publicize Include="CommandTerminal" IncludeCompilerGeneratedMembers="false" />
   </ItemGroup>
@@ -33,4 +34,12 @@
     <Reference Include="UnityEngine.IMGUIModule" />
     <Reference Include="UnityModManager" />
   </ItemGroup>
+  
+  <Target Name="Package" AfterTargets="Build">
+    <Copy SourceFiles="./info.json" DestinationFolder="$(OutputPath)/zip"/>
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(OutputPath)/zip"/>
+    <Copy SourceFiles="$(OutputPath)/LameDLLWrap.dll" DestinationFolder="$(OutputPath)/zip"/>
+    <Copy SourceFiles="$(OutputPath)/libmp3lame.64.dll" DestinationFolder="$(OutputPath)/zip"/>
+    <ZipDirectory Overwrite="true" DestinationFile="$(OutputPath)/Modified-RadioBridge.zip" SourceDirectory="$(OutputPath)/zip"/>
+  </Target>
 </Project>
