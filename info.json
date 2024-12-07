@@ -1,11 +1,11 @@
 {
   "Id": "RadioBridge",
-  "DisplayName": "Radio Bridge",
-  "Author": "Zeibach",
-  "Version": "1.0.1",
+  "DisplayName": "Modified - Radio Bridge",
+  "Author": "Zeibach; PatchedBy:wwwDayDream",
+  "Version": "1.0.1m",
   "LoadAfter": [],
   "AssemblyName": "RadioBridge.dll",
   "EntryMethod": "DvMod.RadioBridge.Main.Load",
   "HomePage": "",
-  "Repository": "https://raw.githubusercontent.com/mspielberg/dv-radio-bridge/master/resources/repository.json"
+  "Repository": "https://github.com/wwwDayDream/dv-radio-bridge-fix"
 }
